@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curvel-sdr"
+version = "0.1.0"
+description = "Curvel-constrained multiview edge triangulation with semidefinite relaxation."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "matplotlib", "cvxpy"]
+
+[tool.setuptools.packages.find]
+include = ["curvel_sdr*"]
